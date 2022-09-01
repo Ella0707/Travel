@@ -1,0 +1,26 @@
+.btn {
+    display: flex;
+    align-items: center;
+
+    span {
+        font-size: 1.6rem;
+        font-weight: 400;
+        color: #006DFE;
+        text-transform: uppercase;
+        margin-right: 2.6rem;
+    }
+
+    img {
+        height: 1rem;
+        width: 3.5rem;
+        object-fit: contain;
+        transition: 0.3s;
+    }
+
+    &:hover {
+        
+        img {
+            transform: translateX(0.5rem);
+        }
+    }
+}

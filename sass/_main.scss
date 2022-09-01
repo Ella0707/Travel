@@ -1,0 +1,328 @@
+.header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    z-index: 1;
+    padding-top: 6rem;
+    
+    &__inner {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    
+    }
+    
+    &__burger-btn {
+    
+    }
+    
+    &__logo {
+        width: 10.2rem;
+        height: 2.5rem;
+
+        img {
+            height: 100%;
+            object-fit: contain;
+        }
+    }
+    
+    &__nav {
+
+        ul {
+            display: flex;
+            align-items: center;
+            font-size: 1.8rem;
+            font-weight: 400;
+            color: #FFFFFF;
+
+            li {
+                &:not(:last-child) {
+                    margin-right: 8.2rem;
+                }
+            }
+        }
+    }
+}
+
+
+.banner {
+    position: relative;
+    height: 96.2rem;
+    margin-bottom: 13.6rem;
+
+    display: flex;
+    align-items: center;
+
+    &>img {
+        position: absolute;
+        inset: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        z-index: -1;
+    }
+
+    &__inner {
+
+    }
+
+    &__title {
+        font-size: 5rem;
+        font-weight: 500;
+        color: #FFFFFF;
+        margin-bottom: 2.2rem;
+        width: 62rem;
+    }
+    &__subtitle {
+        font-size: 1.6rem;
+        font-weight: 400;
+        color: #FFFFFF;
+        margin-bottom: 5.9rem;
+        width: 55rem;
+        line-height: 1.5;
+    }
+
+    &__form {
+        display: flex;
+        
+        label {
+            width: 29.7rem;
+            position: relative;
+
+            &::before {
+                content: "";
+                width: 2rem;
+                height: 2rem;
+                border-radius: 50%;
+                border: 0.2rem solid #FFFFFF;
+                background: transparent;
+
+                position: absolute;
+                left: 0;
+                top: 1.3rem;
+            }
+
+            input {
+                font-size: 1.8rem;
+                font-weight: 500;
+                color: #FFFFFF;
+                padding-left: 4.3rem;
+                width: 100%;
+                padding-bottom: 2.2rem;
+                border-bottom: 0.2rem solid #BFC0C5;
+
+
+                &::placeholder {
+                    font-size: inherit;
+                    font-weight: inherit;
+                    color: inherit;
+                }
+            }
+
+
+            &:not(:last-of-type) {
+                margin-right: 6.1rem;
+            }
+
+            &:last-of-type {
+                margin-right: 6rem;
+            }
+        }
+    
+    }
+    &__btn {
+        font-size: 2.4rem;
+        font-weight: 500;
+        color: #FFFFFF;
+        text-transform: uppercase;
+        padding: 1.5rem 3.9rem;
+        background: #1B7DFF;
+        transition: 0.3s;
+
+        &:hover {
+            background: #267df0;
+        }
+
+        &:active {
+            transform: scale(0.98);
+        }
+    }
+}
+
+.benefits {
+    margin-bottom: 13.1rem;
+    
+    &__inner {
+        box-shadow: 0px 0.2rem 2rem rgba(21, 24, 36, 0.15993);
+        padding: 9.3rem 10rem 11rem 10rem;
+    
+    }
+    
+    &__title {
+        font-size: 3.5rem;
+        font-weight: 500;
+        color: #102746;
+        margin-bottom: 12rem;
+    }
+    
+    &__content {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        column-gap: 5.5rem;
+    }
+    
+    &__item {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+    }
+    
+    &__item-img {
+        height: 6.6rem;
+        width: 6.6rem;
+        margin-bottom: 3.7rem;
+
+        img {
+            height: 100%;
+            object-fit: contain;
+        }
+    
+    }
+    
+    &__item-title {
+        font-size: 1.8rem;
+        font-weight: 500;
+        color: #000000;
+        margin-bottom: 2.6rem;
+        margin-top: auto;
+    }
+    
+    &__item-subtitle {
+        font-size: 1.6rem;
+        font-weight: 400;
+        color: #000000;
+        margin-bottom: 3.9rem;
+        margin-top: auto;
+    }
+    
+    &__item-link {
+        margin-top: auto;
+    }
+   
+    
+}
+
+.block-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.title {
+    font-size: 3.5rem;
+    font-weight: 500;
+    color: #102746;
+    position: relative;
+    padding-bottom: 0.7rem;
+
+    &::before {
+        content: "";
+        height: 0.2rem;
+        width: 25.3rem;
+        background: #006DFE;
+
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        transition: 0.5s;
+    }
+
+    &:hover {
+
+        &::before {
+            width: 100%;
+        }
+    }
+}
+
+
+
+.inspiration {
+    margin-bottom: 13.1rem;
+    
+    &__block-top {
+        margin-bottom: 3.6rem;
+    }
+    
+    &__content {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-areas:
+        "a a a b b b" 
+        "c c d d e e";
+        gap: 1rem;
+    }
+    
+    &__item {
+        box-shadow: 0px 0.4rem 0.4rem rgba(0, 0, 0, 0.25);
+        background: rgba(21, 24, 36, 0.4);
+        position: relative;
+        padding: 2.7rem 2.9rem;
+        overflow: hidden;
+
+        display: flex;
+        flex-direction: column;
+        height: 28.3rem;
+
+        &:nth-child(1) {
+            grid-area: a;
+            height: 35.4rem;
+        }
+
+        &:nth-child(2) {
+            grid-area: b;
+            height: 35.4rem;
+        }
+
+        &:nth-child(3) {
+            grid-area: c;
+        }
+
+        &:nth-child(4) {
+            grid-area: d;
+        }
+        &:nth-child(5) {
+            grid-area: e;
+        }
+
+
+        img {
+            position: absolute;
+            inset: 0;
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+            z-index: -1;
+            transition: 0.5s;
+        }
+
+        &:hover {
+
+            img {
+                transform: scale(1.1);
+            }
+        }
+    }
+    
+    &__item-title {
+        font-size: 5rem;
+        font-weight: 700;
+        color: #FFFFFF;
+        margin-top: auto;
+    }
+
+}
+
+
