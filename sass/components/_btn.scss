@@ -24,3 +24,18 @@
         }
     }
 }
+
+@media (max-width: 48em) { 
+    .btn {
+       
+        span {
+            font-size: 3.2rem;
+            margin-right: 3rem;
+        }
+    
+        img {
+            height: 2rem;
+            width: 5rem;
+        }
+    }
+}

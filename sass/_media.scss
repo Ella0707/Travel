@@ -2,7 +2,6 @@
     display: none;
 }
 
-
 @media (max-width: 48em) {
     .mobile {
         display: block;
@@ -14,55 +13,19 @@
 
     .header {
 
+        &__inner {
+            padding: 0;
+        }
+
         &__burger-btn {
             height: 5.4rem;
-            width: 5rem;
+            width: 5.4rem;
             object-fit: contain;
         }
 
         &__logo {
-            font-size: 2.8rem;
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
             width: 20rem;
-            height: 4rem;
-        }
-
-        &__favorites {
-            width: 4rem;
-            height: 4rem;
-            margin-right: 2.4rem;
-
-            span {
-                width: 2rem;
-                height: 2rem;
-                font-size: 1.5rem;
-
-                position: absolute;
-                top: 0;
-                right: 0;
-                transform: translate(30%, -10%);
-                z-index: 1;
-            }
-        }
-
-        &__profile {
-            width: 4rem;
-            height: 4rem;
-            border-radius: 50%;
-
-            display: flex;
-            align-items: center;
-            justify-content: center;
-
-            background: #ffffff;
-
-            img {
-                width: 100%;
-                height: 100%;
-            }
+            height: 5rem;
         }
 
         &__nav {
@@ -117,22 +80,321 @@
                 top: 8rem;
                 right: 5.2rem;
                 z-index: 100;
-
-            }
-        }
-
-        &__log-mobile {
-            width: 3.6rem;
-            height: 3.6rem;
-
-            img {
-                height: 100%;
-                width: 100%;
-                object-fit: contain;
             }
         }
     }
 
 
+    .banner {
+        height: auto;
+        margin-bottom: 15rem;
+    
+        &__inner {
+            padding: 20rem 0 15rem 0;
+        }
+    
+        &__title {
+            font-size: 7rem;
+            margin-bottom: 4rem;
+            width: 100%;
+        }
+    
+        &__subtitle {
+            font-size: 4.2rem;
+            width: 100%;
+            margin-bottom: 10rem;
+        }
+    
+        &__form {
+            flex-direction: column;
+    
+            label {
+                width: 100%;
+    
+                &::before {
+                    width: 4rem;
+                    height: 4rem;
+                    top: 0rem;
+                }
+    
+                input {
+                    font-size: 3.6rem;
+                    padding-left: 8rem;
+                    padding-bottom: 3rem;
+                }
+    
+                &:not(:last-of-type) {
+                    margin-right: 0rem;
+                    margin-bottom: 6rem;
+                }
 
+                &:last-of-type {
+                    margin-right: 0rem;
+                    margin-bottom: 8rem;
+                }
+            }
+        }
+    
+        &__btn {
+            font-size: 4rem;
+            padding: 3rem 3.9rem;
+            width: 100%;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+
+    .benefits {
+        margin-bottom: 15rem;
+    
+        &__inner {
+            padding: 10rem 5rem 10rem 5rem;
+        }
+    
+        &__title {
+            font-size: 6rem;
+            margin-bottom: 10rem;
+        }
+    
+        &__content {
+            display: grid;
+            grid-template-columns: 1fr;
+            column-gap: 0;
+            row-gap: 5rem;
+        }
+    
+        &__item {
+            display: flex;
+            flex-direction: column;
+            height: auto;
+        }
+    
+        &__item-img {
+            height: 9rem;
+            width: 9rem;
+            margin-bottom: 5rem;
+        }
+    
+        &__item-title {
+            font-size: 3.6rem;
+            margin-bottom: 3rem;
+        }
+    
+        &__item-subtitle {
+            font-size: 3.2rem;
+            margin-bottom: 4.2rem;
+        }
+    }
+
+
+    .block-top {
+        flex-direction: column;
+        align-items: start;
+    }
+    
+    .title {
+        font-size: 6rem;
+        margin-bottom: 4rem;
+    }
+    
+    .inspiration {
+        margin-bottom: 15rem;
+    
+        &__block-top {
+            margin-bottom: 4rem;
+        }
+    
+        &__content {
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-areas:
+                "a"  "b" "c" "d" "e";
+            gap: 2rem;
+        }
+    
+        &__item {
+            padding: 3.5rem 4rem;
+            height: 35rem;
+    
+            &:nth-child(1) {
+                grid-area: a;
+                height: 35rem;
+                margin-right: 0rem;
+            }
+    
+            &:nth-child(2) {
+                grid-area: b;
+                height: 35rem;
+            }
+    
+            &:nth-child(3) {
+                grid-area: c;
+                margin-right: 0rem;
+            }
+    
+            &:nth-child(4) {
+                grid-area: d;
+            }
+    
+            &:nth-child(5) {
+                grid-area: e;
+                margin-left: 0rem;
+            }
+        }
+    
+        &__item-title {
+            font-size: 6rem;
+        }
+    }
+
+    .trip {
+        margin-bottom: 15rem;
+    
+        &__row {
+            flex-direction: column-reverse;
+            height: auto;
+    
+            &:not(:last-child) {
+                margin-bottom: 8rem;
+            }
+    
+            &:nth-child(2) {
+                flex-direction: column-reverse;
+    
+                .trip__img {
+                    margin-left: 0rem;
+                    margin-bottom: 0rem;
+                }
+            }
+        }
+    
+        &__img {
+            width: 100%;
+            height: 30rem;
+            margin-right: 0rem;
+        }
+    
+        &__text-block {
+            padding-top: 0rem;
+            width: 100%;
+            margin-bottom: 4rem;
+        }
+    
+        &__title {
+            font-size: 5rem;
+        }
+    
+        &__subtitle {
+            font-size: 3.2rem;
+            padding: 3rem 0;
+        }
+    }
+
+    .places {
+        margin-bottom: 15rem;
+    
+        .container {
+            width: 100%;
+        }
+
+        &__title {
+            margin-bottom: 8rem;
+        }
+    
+        &__content-wrapper {
+            display: flex;
+            gap: 0;
+        }
+    }
+    
+    .box {
+
+        &__img {
+    
+            height: 37.7rem;
+            margin-bottom: 7rem;
+        }
+    
+        &__info-wrap {
+            padding: 3rem 5rem;
+        }
+    
+        &__place {
+            font-size: 3.6rem;
+            padding-right: 3rem;
+        }
+    
+        &__info-item {
+    
+            span {
+                font-size: 3.2rem;
+                margin-right: 1.2rem;
+            }
+    
+            img {
+                width: 3rem;
+                height: 3rem;
+            }
+    
+            &:not(:last-child) {
+                margin-right: 2rem;
+            }
+        }
+    
+        &__text {
+            font-size: 3.2rem;
+            margin-bottom: 4rem;
+        }
+    
+        &__link {
+            padding: 3rem 4rem;
+            font-size: 3.2rem;
+        }
+    }
+
+    .video {
+        height: 70rem;
+    
+        &__btn {
+            width: 15rem;
+            height: 15rem;
+        }
+    }
+
+    .footer {
+    
+        &__inner {
+            padding: 12rem 0rem 12rem 0rem;
+            flex-direction: column;
+        }
+    
+        &__logo {
+            width: 23rem;
+            height: 8rem;
+            margin-bottom: 6rem;
+        }
+    
+        &__nav {
+            width: 100%;
+            display: flex;
+        }
+    
+        &__list {
+    
+            li {
+                font-size: 3rem;
+    
+                &:not(:last-child) {
+                    margin-bottom: 2rem;
+                }
+            }
+        }
+    
+        &__list-title {
+            font-size: 3.4rem;
+            margin-bottom: 1rem;
+        }
+    }
 }
