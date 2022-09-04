@@ -1104,6 +1104,7 @@ input[type=number] {
   }
   .places {
     margin-bottom: 15rem;
+    overflow: hidden;
   }
   .places .container {
     width: 100%;
