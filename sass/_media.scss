@@ -295,6 +295,7 @@
     .places {
         margin-bottom: 15rem;
         overflow: hidden;
+        position: relative;
     
         .container {
             width: 100%;
@@ -307,6 +308,55 @@
         &__content-wrapper {
             display: flex;
             gap: 0;
+        }
+
+        .slider-arrow-next {
+            width: 8rem;
+            height: 8rem;
+            border-radius: 50%;
+            background: #ffffff;
+            box-shadow: 0px 0.2rem 2rem rgba(21, 24, 36, 0.15993);
+            cursor: pointer;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            position: absolute;
+            top: 35%;
+            right: 2rem;
+            z-index: 10;
+
+            img {
+                width: 3rem;
+                height: 2rem;
+                object-fit: contain;
+            }
+        }
+
+        .slider-arrow-prev {
+            width: 8rem;
+            height: 8rem;
+            border-radius: 50%;
+            background: #ffffff;
+            box-shadow: 0px 0.2rem 2rem rgba(21, 24, 36, 0.15993);
+            cursor: pointer;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            position: absolute;
+            top: 35%;
+            left: 2rem;
+            z-index: 10;
+
+            img {
+                width: 3rem;
+                height: 1.5rem;
+                transform: rotate(-180deg);
+                object-fit: contain;
+            }
         }
     }
     

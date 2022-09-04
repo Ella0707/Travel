@@ -13,6 +13,11 @@ const activitySlider = new Swiper('#destroy-1', {
   slidesPerView: 1,
   loop: true,
   spaceBetween: 30,
+
+  navigation: {
+    nextEl: '.slider-arrow-next',
+    prevEl: '.slider-arrow-prev',
+},
 });
 
 if ($('#destroy-1').length) {
